@@ -1,0 +1,1 @@
+{"name":"Local: 2-Sorting","url":"f:\\Programming\\C++\\C++ Theory\\DSA\\2-Sorting.cpp","tests":[{"id":1655310258690,"input":"10\n57\n0\n63\n54\n34\n22\n55\n56\n99\n100","output":"0\n22\n34\n54\n55\n56\n57\n63\n99\n100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\C++\\C++ Theory\\DSA\\2-Sorting.cpp","group":"local","local":true}

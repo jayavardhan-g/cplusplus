@@ -1,0 +1,1 @@
+{"name":"Local: RemoveCharacters","url":"f:\\Programming\\C++\\Tools\\RemoveCharacters.cpp","tests":[{"id":1658747268351,"input":"[4,2,2,11,7,12,9,8]\n4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\C++\\Tools\\RemoveCharacters.cpp","group":"local","local":true}

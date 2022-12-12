@@ -1,0 +1,1 @@
+{"name":"Local: Modulus","url":"f:\\C++\\CodeISM\\Modulus.cpp","tests":[{"id":1661523331181,"input":"5 3","output":""},{"id":1661523341599,"input":"-10 5","output":""},{"id":1661523351115,"input":"-10 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\CodeISM\\Modulus.cpp","group":"local","local":true}
