@@ -1,0 +1,1 @@
+{"name":"Local: Int To Bit","url":"f:\\C++\\Learning\\CodeISM\\Bit Manipulation\\Int To Bit.cpp","tests":[{"id":1684391914899,"input":"4\n2205057024\n2205061119\n2205057024\n2147483648","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\Bit Manipulation\\Int To Bit.cpp","group":"local","local":true}

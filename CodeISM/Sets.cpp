@@ -26,7 +26,7 @@ int32_t main(){
     if(it==st.end())cout<<"FALSE"<<endl;
     else cout<<"TRUE"<<endl;
 
-    it=st.find(10);
+    it=st.find(111);
     if(it==st.end())cout<<"FALSE"<<endl;
     cout<<*it;
 }
