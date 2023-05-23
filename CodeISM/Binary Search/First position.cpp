@@ -8,13 +8,11 @@ int32_t main(){
     int pos=-1;
     while(lo<=hi){
         m=lo+(hi-lo)/2;
-        if(v[m]==1 && v[m-1]==0){
-            pos=m; break;
-        }
-        else if(v[m]==1 && v[m-1]==1){
+        if(v[m]==0)lo=m+1;
+        else{
+            pos=m;
             hi=m-1;
         }
-        else lo=m+1;
         
     }
     cout<<pos;
