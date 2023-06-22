@@ -1,0 +1,1 @@
+{"name":"Local: Typical Stairs","url":"f:\\C++\\Learning\\Striver\\DP\\Typical Stairs.cpp","tests":[{"id":1687115941366,"input":"100 5\n1\n23\n45\n67\n89","output":"608200469"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\DP\\Typical Stairs.cpp","group":"local","local":true}

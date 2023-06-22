@@ -38,24 +38,19 @@ int32_t main(){
         j+=x*y;
     }
     x=0;
+    y=0;
     while(x!=-1){
         cin>>x;
-        cin>>s;
-        if(s=="A+")y=10;
-        else if(s=="A")y=9;
-        else if(s=="B+")y=8;
-        else if(s=="B")y=7;
-        else if(s=="C+")y=6;
-        else if(s=="C")y=5;
-        else if(s=="D")y=4;
-        else y=8.5;
+        cin>>y;
         if(x==-1)break;
         i+=x;
         j+=x*y;
     }
+
     a=j/i;
-    cout<<a;
+    cout<<setprecision(3)<<a;
 }
+
 
 /*
 6 C+
@@ -105,6 +100,18 @@ int32_t main(){
 9 B
 2 B+
 2 B
+
+9 A
+9 B
+9 B
+9 B
+9 B
+2 B+
+2 B
+
+-1 X
+
+0 0
 
 -1 X
 */

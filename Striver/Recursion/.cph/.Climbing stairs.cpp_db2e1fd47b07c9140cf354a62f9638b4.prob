@@ -1,0 +1,1 @@
+{"name":"Local: Climbing stairs","url":"f:\\C++\\Learning\\Striver\\Recursion\\Climbing stairs.cpp","tests":[{"id":1687064661253,"input":"5\n17\n18\n19\n10\n3","output":"2584\n4181\n6765\n89\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\Recursion\\Climbing stairs.cpp","group":"local","local":true}
