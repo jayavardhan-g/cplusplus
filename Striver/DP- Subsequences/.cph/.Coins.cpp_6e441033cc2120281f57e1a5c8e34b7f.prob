@@ -1,0 +1,1 @@
+{"name":"Local: Coins","url":"f:\\C++\\Learning\\Striver\\DP- Subsequences\\Coins.cpp","tests":[{"id":1688900579541,"input":"1\n10\n1 2 3 4 5 6 7 8 9 10\n1000","output":"968356321790171"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\DP- Subsequences\\Coins.cpp","group":"local","local":true}
