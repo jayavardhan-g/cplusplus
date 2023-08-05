@@ -41,7 +41,15 @@ int32_t main(){
     y=0;
     while(x!=-1){
         cin>>x;
-        cin>>y;
+        cin>>s;
+        if(s=="A+")y=10;
+        else if(s=="A")y=9;
+        else if(s=="B+")y=8;
+        else if(s=="B")y=7;
+        else if(s=="C+")y=6;
+        else if(s=="C")y=5;
+        else if(s=="D")y=4;
+        else y=7.2;
         if(x==-1)break;
         i+=x;
         j+=x*y;
