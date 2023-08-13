@@ -1,0 +1,1 @@
+{"name":"Local: Number of provinces","url":"f:\\C++\\Learning\\Striver\\Graphs\\Number of provinces.cpp","tests":[{"id":1691526433793,"input":"3 2\n0 2\n2 0","output":""},{"id":1691575493058,"input":"2 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\Graphs\\Number of provinces.cpp","group":"local","local":true}

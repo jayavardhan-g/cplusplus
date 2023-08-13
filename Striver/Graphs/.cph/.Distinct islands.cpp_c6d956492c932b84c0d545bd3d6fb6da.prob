@@ -1,0 +1,1 @@
+{"name":"Local: Distinct islands","url":"f:\\C++\\Learning\\Striver\\Graphs\\Distinct islands.cpp","tests":[{"id":1691718818691,"input":"4 5\n1 1 0 1 1\n1 0 0 0 0\n0 0 0 0 1\n1 1 0 1 1","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\Graphs\\Distinct islands.cpp","group":"local","local":true}
