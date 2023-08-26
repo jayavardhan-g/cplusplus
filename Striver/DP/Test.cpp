@@ -1,28 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
+#define endl "\n"
+#define int long long
 
-        long long int t;
-       cin>>t;
-       while(t--){
-       long long int n,m,h,ans=0,i;
-       cin>>n >>m >>h;
+int rec(int i,int s,vector<int>&v){
+    if(i==v.size() && s==0)return 0;
+    if(i==v.size() && s!=0)return -1e9;
 
-        long long int p=min(n,m);
-       vector<long long int>a(n),b(m);
-       for(i=0;i<n;i++){
-       cin>>a[i] ;
-       }
-       for(i=0;i<m;i++){
-       cin>>b[i] ;
-       }
-       sort(a.begin(),a.end());
-       reverse(a.begin(),a.end());
-       sort(b.begin(),b.end());
-       reverse(b.begin(),b.end());
-       for(i=0;i< p;i++){
-       ans=ans+ min(a[i],h*b[i]);
-       }
-       cout<<ans<<endl;
-       }
+    int p=1+ rec(i+1,s-v[i],v);
+    int np= rec(i+1,s,v);
+
+    return max(p,np);
+
+}
+int getLongestSubarray(vector<int>& nums, int k){
+    return rec(0,k,nums);
+}
+
+int32_t main(){
+        int n;cin>>n;
+        int m;cin>>m;
+        vector<int> v(n);for(int i=0;i<n;i++)cin>>v[i];
+        cout<<getLongestSubarray(v,m);
 }

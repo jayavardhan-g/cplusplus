@@ -11,7 +11,7 @@ using namespace std;
 
         priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
         pq.push({0,0});
-        int ways[n]={-1};
+        int ways[n];
         ways[0]=1;
         vector<int> time(n,INT_MAX);
         time[0]=0;

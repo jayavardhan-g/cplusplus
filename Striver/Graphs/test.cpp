@@ -2,22 +2,27 @@
 using namespace std;
 #define endl "\n"
 #define int long long
-
+    int countPairs(vector<int>& v, int target) {
+        sort(v.begin(),v.end());
+        int  ans=0;
+        int i=0;
+        int j=v.size()-1;
+        while(i<j){
+            int x=v[i]+v[j];
+            if(x>=target){
+                j--;
+            }else{
+                ans+=(j-i);
+                i++;
+            }
+        }
+        return ans;
+    }
 
 int32_t main(){
     int n;cin>>n;
-    set<int> s;
+    vector<int> v(n);for(int i=0;i<n;i++)cin>>v[i];
     int x;
-    for(int i=0;i<n;i++){
-        cin>>x;
-        s.insert(x);
-    }
-    for(auto i=s.begin();i!=s.end();i++)cout<<*i;
-    cout<<endl;
-
-    auto i=s.begin();
-    for(int a=0;a<3;a++)i++;
-    cout<<*i;
-    i--;
-    cout<<*i;
+    cin>>x;
+    cout<<countPairs(v,x);
 }
