@@ -44,8 +44,8 @@ int palindromePartitioning(string s)
 {   
     vector<int> dp2(s.length(),-1);
     return rec2(0,s,dp2);
-    vector<vector<int>> dp(s.length(),vector<int>(s.length(),-1));
-    return rec(0,s.length()-1,s,dp);
+    // vector<vector<int>> dp(s.length(),vector<int>(s.length(),-1));
+    // return rec(0,s.length()-1,s,dp);
 }
 
 int32_t main(){

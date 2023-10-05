@@ -46,11 +46,20 @@ class DisjointSet{
                 if(x+dx[k]< n && x+dx[k]>=0 && y+dy[k]<m && y+dy[k]>=0 && v[x+dx[k]][y+dy[k]]==1){
                     s.erase(ds.findUparent({x+dx[k],y+dy[k]}));
                     ds.unionByRank({x,y}, {x+dx[k],y+dy[k]});
+                    // s.insert(ds.findUparent({x+dx[k],y+dy[k]}));
+                }
+                
+            }
+            for(int k=0;k<4;k++){
+                if(x+dx[k]< n && x+dx[k]>=0 && y+dy[k]<m && y+dy[k]>=0 && v[x+dx[k]][y+dy[k]]==1){
+                    // s.erase(ds.findUparent({x+dx[k],y+dy[k]}));
+                    // ds.unionByRank({x,y}, {x+dx[k],y+dy[k]});
                     s.insert(ds.findUparent({x+dx[k],y+dy[k]}));
                 }
+
+            }
                 s.insert(ds.findUparent({x,y}));
                 r.push_back(s.size());
-            }
         }
         // for(int i=0;i<n;i++)for(int j=0;j<n;j++)if(v[i][j]==1)s.insert(ds.findUparent({i,j}));
         return r;

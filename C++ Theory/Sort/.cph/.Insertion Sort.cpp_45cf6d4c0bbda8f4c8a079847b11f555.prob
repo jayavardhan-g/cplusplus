@@ -1,0 +1,1 @@
+{"name":"Local: Insertion Sort","url":"f:\\C++\\Learning\\Striver\\Sort\\Insertion Sort.cpp","tests":[{"id":1693321227931,"input":"12\n3 4 2 1 3 4 9 7 10 1 -100 100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\Striver\\Sort\\Insertion Sort.cpp","group":"local","local":true}
