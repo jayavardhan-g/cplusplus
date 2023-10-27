@@ -18,7 +18,6 @@ void insertAtStart(Node* &head,int value){
     temp->next = head;
     head=temp;
 }
-
 void insertAtEnd(Node *&head,int value){
     Node* temp=head;
     while(temp->next!=NULL){
@@ -29,6 +28,10 @@ void insertAtEnd(Node *&head,int value){
 }
 
 void insertInMiddle(Node*&head, int position,int value){
+    if(position==0){
+        insertAtStart(head,value);
+        return;
+    }
     Node*ptr=head;
     for(int i=1;i<position;i++){
         ptr=ptr->next;
@@ -38,7 +41,12 @@ void insertInMiddle(Node*&head, int position,int value){
     ptr->next=temp;
 }
 
+void deleteStartNode(Node* &head){
+    head=head->next;
+}
+
 void deleteNodePosition(Node* &head, int position){
+    if(position==0)deleteStartNode(head);
     Node* ptr=head;
     for(int i=1;i<position;i++){
         ptr=ptr->next;
@@ -47,6 +55,10 @@ void deleteNodePosition(Node* &head, int position){
 }
 
 void deleteNodeValue(Node* &head,int value){
+    if(head->data==value){
+        deleteStartNode(head);
+        return ;
+    }
     Node*ptr=head;
     while(ptr->next!=NULL && ptr->next->data!=value){
         ptr=ptr->next;

@@ -1,0 +1,1 @@
+{"name":"Local: DFS","url":"f:\\C++\\Learning\\CodeISM\\Graphs\\205\\DFS.cpp","tests":[{"id":1697726779523,"input":"7\n2 1 4\n3 2 3 5\n0\n0\n2 5 6\n0\n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\Graphs\\205\\DFS.cpp","group":"local","local":true}
