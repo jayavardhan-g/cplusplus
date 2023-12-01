@@ -1,3 +1,8 @@
+    //Target
+// 27 7.2
+// 6 8
+// 36 9.5
+// 6 9
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -49,7 +54,7 @@ int32_t main(){
         else if(s=="C+")y=6;
         else if(s=="C")y=5;
         else if(s=="D")y=4;
-        else y=7.2;
+        else y=stod(s);
         if(x==-1)break;
         i+=x;
         j+=x*y;

@@ -4,8 +4,7 @@ using namespace std;
 // #define int long long
 
 int32_t main(){
-    unsigned int n;cin>>n;
-    cout<<~n<<endl;
-    int x=n;
-    cout<<~x;
+    string s;cin>>s;
+    int z=stoi(s);    
+    cout<<z+12;
 }
