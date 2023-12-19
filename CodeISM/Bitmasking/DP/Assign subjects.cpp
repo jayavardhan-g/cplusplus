@@ -1,3 +1,4 @@
+//https://www.spoj.com/problems/ASSIGN/
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"

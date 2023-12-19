@@ -1,0 +1,1 @@
+{"name":"Local: BFS Path","url":"f:\\C++\\Learning\\CodeISM\\Graphs\\Shortest path algorithms\\BFS Path.cpp","tests":[{"id":1701957821155,"input":"5 5\n1 2\n1 3\n1 4\n2 3\n5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\Graphs\\Shortest path algorithms\\BFS Path.cpp","group":"local","local":true}

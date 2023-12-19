@@ -1,0 +1,1 @@
+{"name":"Local: Kathithi","url":"f:\\C++\\Learning\\CodeISM\\Graphs\\204\\Kathithi.cpp","tests":[{"id":1701848963055,"input":"5 7 1\n1 2\n1 3\n1 4\n1 5\n2 4\n2 5\n3 4","output":"0\n3\n2\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\Graphs\\204\\Kathithi.cpp","group":"local","local":true}
