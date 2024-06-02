@@ -5,37 +5,59 @@ using namespace std;
 vector<int> cyc;
 // int z=-1;
 bool d=0;
+int s=0;
 
-void dfs(int node,int t,int parent,int vis[],vector<int> adj[]){
-// void dfs(int node,vector<int> a,int parent,int vis[],vector<int> adj[]){
-    vis[node]=1;
-    if(d)return;
+bool dfs(int node,int t,int parent,int vis[],vector<int> adj[]){
+    vis[node]=t;
     for(auto next:adj[node]){
         if(next!= parent){
-            if(vis[next]==1){
-                int i;
-                for(i=a.size()-1;i>=0;i--){
-                    if(a[i]==next)break;
-                }
-                if(i-a.size()>2){
-                    for(i;i<a.size();i++){
-                        cyc.push_back(a[i]);
-                    }
-                    cyc.push_back(next);
-                    d=1;
-                }
+            if(vis[next]>0 && vis[next]-t>2){
+                cyc.push_back(next);
+                s=next;
             }
             if(d)return;
             if(vis[next]==0){
                 // a.push_back(next);
-                dfs(next,a,node,vis,adj);
+                if(dfs(next,t+1,node,vis,adj)){
+                    
+                }
             }
             if(d)return;
         }
     }
 
-    vis[node]=2;
+    vis[node]=-1;
 }
+// void dfs(int node,vector<int> a,int parent,int vis[],vector<int> adj[]){
+//     vis[node]=1;
+//     if(d)return;
+//     a.push_back(node);
+//     for(auto next:adj[node]){
+//         if(next!= parent){
+//             if(vis[next]==1){
+//                 int i;
+//                 for(i=a.size()-1;i>=0;i--){
+//                     if(a[i]==next)break;
+//                 }
+//                 if(i-a.size()>2){
+//                     for(i;i<a.size();i++){
+//                         cyc.push_back(a[i]);
+//                     }
+//                     cyc.push_back(next);
+//                     d=1;
+//                 }
+//             }
+//             if(d)return;
+//             if(vis[next]==0){
+//                 // a.push_back(next);
+//                 dfs(next,a,node,vis,adj);
+//             }
+//             if(d)return;
+//         }
+//     }
+
+//     vis[node]=2;
+// }
 
 int32_t main(){
     int n,m;cin>>n>>m;
@@ -46,8 +68,12 @@ int32_t main(){
         adj[y].push_back(x);
     }
     int vis[n+1]={0};
+    bool ans=0;
     for(int i=1;i<n+1;i++){
-        if(!vis[i])dfs(i,vector<int>{0},-1,vis,adj);
+        // if(!vis[i])dfs(i,vector<int>{0},-1,vis,adj);
+        if(!vis[i]){
+            ans |= dfs(i,0,-1,vis,adj);
+        }
     }
     if(d){
         cout<<cyc.size()<<endl;

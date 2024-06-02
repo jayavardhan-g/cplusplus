@@ -3,19 +3,24 @@
 using namespace std;
 #define int long long
 int32_t main(){
-    int n,x,y;
-    cin>>n>>x>>y;
-    int hi=max(x*n,y*n);
-    int lo=0,m,ans=hi;
-    n=n-1;
+    int n,x,y;cin>>n>>x>>y;
+    int ans=min(x,y);
+    n--;
+    int r=0;
+    int lo=0, hi = max(x,y)*n;
+
     while(lo<=hi){
-        m=lo+(hi-lo)/2;
-        int minn=m*x + (n-m)*y;
-        if(minn>ans){
+        int m = lo+(hi-lo)/2;
+
+        int k = m/x + m/y;
+        
+        if(k>=n){
+            r= m;
             hi=m-1;
         }else{
-            ans=m;
-            lo=m+1;
+            lo = m+1;
         }
     }
+    ans += r;
+    cout<< ans;
 }
