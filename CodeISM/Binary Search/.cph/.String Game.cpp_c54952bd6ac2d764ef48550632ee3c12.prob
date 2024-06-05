@@ -1,0 +1,1 @@
+{"name":"Local: String Game","url":"f:\\C++\\Learning\\CodeISM\\Binary Search\\String Game.cpp","tests":[{"id":1717386382695,"input":"ababcba\nabb\n5 3 4 1 7 6 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\Binary Search\\String Game.cpp","group":"local","local":true}

@@ -45,15 +45,6 @@ int32_t main(){
     cout<<time<<endl;
     int blown=0;
     for(int i=0;i<n;i++){
-        if(blown==m){
-            cout<<0<<' ';
-        }
-        else if(blown+r[i]>m){
-            cout<< (blown+r[i]-m)<<' ';
-            blown =m;
-        }else{
-            cout<<r[i]<<' ';
-            blown+=r[i];
-        }
+        
     }
 }
