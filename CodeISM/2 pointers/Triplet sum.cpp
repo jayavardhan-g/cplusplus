@@ -4,21 +4,21 @@ using namespace std;
 #define int long long
 
 bool find3Numbers(int a[], int n, int x){   
-        sort(&a[0],&a[n]);
-        bool flag=0;
-        for(int i=0;i<n;i++){
-            int sumleft= x- a[i];
-            int l=i+1,r= n-1;
-            while(l<r){
-                if(a[l]+a[r]==sumleft){return 1;}
-                if(a[l]+a[r]>sumleft){
-                    r--;
-                }else{
-                    l++;
-                }
+    sort(&a[0],&a[n]);
+    bool flag=0;
+    for(int i=0;i<n;i++){
+        int sumleft= x- a[i];
+        int l=i+1,r= n-1;
+        while(l<r){
+            if(a[l]+a[r]==sumleft){return 1;}
+            if(a[l]+a[r]>sumleft){
+                r--;
+            }else{
+                l++;
             }
-        }
-        return 0;
+        }   
+    }
+    return 0;
 }
 int32_t main(){
     int n;cin>>n;

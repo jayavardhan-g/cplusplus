@@ -1,0 +1,1 @@
+{"name":"Local: Knapsack","url":"f:\\C++\\Learning\\CodeISM\\2 pointers\\Knapsack.cpp","tests":[{"id":1721749436849,"input":"6 20\n9 7 6 5 8 4\n7 1 3 6 8 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\2 pointers\\Knapsack.cpp","group":"local","local":true}

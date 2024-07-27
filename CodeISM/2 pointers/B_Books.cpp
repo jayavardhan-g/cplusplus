@@ -2,22 +2,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
+
 int32_t main(){
-    int n;cin>>n;
-    int t;cin>>t;
-    vector<int> v(n);for(int i=0;i<n;i++)cin>>v[i];
-    int i=0,j=0;
-    int x=0;
-    int sum=v[i]; 
-    while(j<n && i<n){
-       if(sum<=t){
-        x=max(x, (j-i)+1);
-        j++;
-        sum+=v[j];
-       }else{
-        sum-=v[i];
-        i++;
-       }
+    int n,t;cin>>n>>t;
+    int a[n];for(int i=0;i<n;i++)cin>>a[i];
+
+
+    int l=0,r=0,sum=0;
+    int ans=0;
+    while(l<=r && r<n){
+        if(sum <=t){
+            // cout<<sum<<' '<<r<<endl;
+            sum+= a[r];
+            if(sum<=t)ans= max(ans, r-l+1);
+            
+            r++;
+        }else{
+            // cout<<sum<<' '<<l<<endl;
+            sum-=a[l];
+            l++;
+        }
     }
-    cout<<x;
+    cout<<ans<<endl;
 }

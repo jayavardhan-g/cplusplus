@@ -1,0 +1,1 @@
+{"name":"Local: Sum=x","url":"f:\\C++\\Learning\\CodeISM\\2 pointers\\Sum=x.cpp","tests":[{"id":1721659013503,"input":"3 5\n1 2 3","output":""},{"id":1721659616321,"input":"200000 776363847","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\C++\\Learning\\CodeISM\\2 pointers\\Sum=x.cpp","group":"local","local":true}
